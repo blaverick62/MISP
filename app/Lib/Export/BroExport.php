@@ -25,17 +25,17 @@ class BroExport
         'domain' => array('brotype' => 'DOMAIN'),
         'domain|ip' => array('brotype' => 'DOMAIN', 'composite' => 'ADDR'),
         'url' => array('brotype' => 'URL', 'replace' => array('#^https?://#', '')),
-        'user-agent' => array('brotype' => 'SOFTWARE'),
+        /*'user-agent' => array('brotype' => 'SOFTWARE'),
         'md5' => array('brotype' => 'FILE_HASH'),
         'malware-sample' => array('brotype' => 'FILE_NAME', 'composite' => 'FILE_HASH'),
         'filename|md5' => array('brotype' => 'FILE_NAME', 'composite' => 'FILE_HASH'),
         'sha1' => array('brotype' => 'FILE_HASH'),
         'filename|sha1' => array('brotype' => 'FILE_NAME', 'composite' => 'FILE_HASH'),
         'sha256' => array('brotype' => 'FILE_HASH'),
-        'filename|sha256' => array('brotype' => 'FILE_NAME', 'composite' => 'FILE_HASH'),
+        'filename|sha256' => array('brotype' => 'FILE_NAME', 'composite' => 'FILE_HASH'),*/
         'x509-fingerprint-sha1' => array('brotype' => 'CERT_HASH'),
         'pdb' => array('brotype' => 'FILE_NAME'),
-        'authentihash' => array('brotype' => 'FILE_HASH'),
+        /*'authentihash' => array('brotype' => 'FILE_HASH'),
         'ssdeep' => array('brotype' => 'FILE_HASH'),
         'imphash' => array('brotype' => 'FILE_HASH'),
         'pehash' => array('brotype' => 'FILE_HASH'),
@@ -57,7 +57,7 @@ class BroExport
         'filename|sha512' => array('brotype' => 'FILE_NAME', 'composite' => 'FILE_HASH'),
         'filename|sha512/224' => array('brotype' => 'FILE_NAME', 'composite' => 'FILE_HASH'),
         'filename|sha512/256' => array('brotype' => 'FILE_NAME', 'composite' => 'FILE_HASH'),
-        'filename|tlsh' => array('brotype' => 'FILE_NAME', 'composite' => 'FILE_HASH')
+        'filename|tlsh' => array('brotype' => 'FILE_NAME', 'composite' => 'FILE_HASH')*/
     );
 
     // export group to misp type mapping
@@ -92,7 +92,7 @@ class BroExport
             array('filename|sha256', 1),
             array('malware-sample', 1),
             array('pdb', 1)
-        ),
+        ),/*
         'filehash' => array(
             array('md5', 1),
             array('sha1', 1),
@@ -123,7 +123,7 @@ class BroExport
             array('filename|sha512/256', 2),
             array('filename|tlsh', 2),
             array('malware-sample', 2)
-        ),
+        ),*/
         'certhash' => array(
             array('x509-fingerprint-sha1', 1)
         ),

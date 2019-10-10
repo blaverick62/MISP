@@ -8,8 +8,4 @@ class DashboardController extends AppController
         'RequestHandler'
     );
 
-    public function view()
-    {
-        header("Location: /dashboard");
-    }
 }
